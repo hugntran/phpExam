@@ -29,9 +29,6 @@ class WebController extends Controller
         $books = Book::where("title","LIKE","%$keyword%")
             ->orderBy("bookid","desc")->get();
 
-       
         return view("book",compact("books"));
-
     }
-
 }
