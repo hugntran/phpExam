@@ -30,7 +30,7 @@ class WebController extends Controller
             ->orderBy("bookid","desc")->get();
 
        
-        return view("book",compact("books"))
+        return view("book",compact("books"));
 
     }
 
