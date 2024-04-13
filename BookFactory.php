@@ -19,7 +19,7 @@ class BookFactory extends Factory
     {
         $name = $this->faker->unique()->domainName;
         return [
-            "authorid" => $this->faker->numberBetween(1, 1000), 
+            "authorid" => $this->faker->numberBetween(1, 100), 
             "title" => $name,
             "ISBN" => $name,
             "pub_year" => $this->faker->year('now'), 
