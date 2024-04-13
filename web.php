@@ -6,7 +6,7 @@ use \App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Wb Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
