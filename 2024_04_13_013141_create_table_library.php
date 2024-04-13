@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('books', function (Blueprint $table) {
             $table->bigIncrements("bookid");
             $table->integer("authorid");
-            $table->string("title", 55);
+            $table->string("title", 25);
             $table->string("ISBN", 25);
             $table->smallInteger("pub_year");
             $table->tinyInteger("available");
