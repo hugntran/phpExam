@@ -12,11 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('books', function (Blueprint $table) {
-            $table->bigIncrements("bookid");
-            $table->integer("authorid");
+            $table->bigIncrements("bookid", 11);
+            $table->integer("authorid", 11)->default(0);;
             $table->string("title", 25);
             $table->string("ISBN", 25);
-            $table->smallInteger("pub_year");
+            $table->smallInteger("pub_year")->default(0);;
             $table->tinyInteger("available");
             $table->timestamps();
         });
